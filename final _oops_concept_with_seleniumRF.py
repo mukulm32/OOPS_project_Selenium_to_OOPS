@@ -1,33 +1,5 @@
 
-
-'''#import time
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-#from selenium.webdriver.support.select import Select
-
-driver = webdriver.Chrome()
-driver.maximize_window()
-driver.implicitly_wait(30)
-
-driver.get("https://www.opencart.com/")
-driver.find_element(By.LINK_TEXT, "LOGIN").click()
-
-driver.find_element(By.NAME, "email").send_keys("mukulmangde3@gmail.com")
-
-# enter lastname as wick
-driver.find_element(By.NAME, "password").send_keys("123456789")
-
-driver.find_element(By.CLASS_NAME, "btn-primary").click()
-
-driver.find_element(By.ID, 'input-pin').send_keys("9881")
-
-driver.find_element(By.XPATH, "//button[text()='Continue']").click()
-
-expexted = driver.find_element(By.XPATH, "//a[contains(text(),'Details')]").text
-print(expexted)'''
-
-
-#project
+#project oops concept with selenium
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
