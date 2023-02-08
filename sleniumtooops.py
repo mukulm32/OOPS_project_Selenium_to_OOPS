@@ -2,10 +2,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
-
-
-
 class LoginOpenCart:
     def __init__(self, driver):
         self.driver = driver
@@ -24,6 +20,7 @@ class LoginOpenCart:
 def login():
     return 0
 
+
 class DetailsPage(LoginOpenCart):
     def get_details_text(self):
         expected = self.driver.find_element(By.XPATH, "//a[contains(text(),'Details')]").text
@@ -34,9 +31,6 @@ class DetailsPage(LoginOpenCart):
             print("processing ")
         except:
             print("error! check for xpath")
-
-def login():
-    return 0
 
 driver = webdriver.Chrome()
 detail = DetailsPage(driver)
