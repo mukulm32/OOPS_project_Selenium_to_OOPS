@@ -44,6 +44,6 @@ class TestLoginOpenCart:
         actual_text = setup_driver.get_details_text()
         assert actual_text == 'Account Details', f"Expected text is 'Account Details' but got '{actual_text}'"
 
-    #def test_xpath_check(self, setup_driver):
-      #  setup_driver.exp()
-       # assert setup_driver.driver.find_element(By.LINK_TEXT, "LOGIN").text == "LOGIN", "Could not find LOGIN link"
+    def test_xpath_check(self, setup_driver):
+        setup_driver.exp()
+        assert setup_driver.driver.find_element(By.LINK_TEXT, "LOGIN").text == "LOGIN", "Could not find LOGIN link"

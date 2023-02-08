@@ -1,11 +1,10 @@
 #project oops concept with selenium
-from abc import abstractmethod
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-def login(abc=log)
-    @abstractmethod
-    return 0
+
+
+
 
 class LoginOpenCart:
     def __init__(self, driver):
@@ -22,6 +21,9 @@ class LoginOpenCart:
         self.driver.find_element(By.ID, 'input-pin').send_keys("9881")
         self.driver.find_element(By.XPATH, "//button[text()='Continue']").click()
 
+def login():
+    return 0
+
 class DetailsPage(LoginOpenCart):
     def get_details_text(self):
         expected = self.driver.find_element(By.XPATH, "//a[contains(text(),'Details')]").text
@@ -32,6 +34,9 @@ class DetailsPage(LoginOpenCart):
             print("processing ")
         except:
             print("error! check for xpath")
+
+def login():
+    return 0
 
 driver = webdriver.Chrome()
 detail = DetailsPage(driver)
