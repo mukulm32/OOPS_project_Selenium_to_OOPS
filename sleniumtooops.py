@@ -1,6 +1,11 @@
 #project oops concept with selenium
+from abc import abstractmethod
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
+def login(abc=log)
+    @abstractmethod
+    return 0
 
 class LoginOpenCart:
     def __init__(self, driver):
